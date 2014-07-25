@@ -851,8 +851,26 @@ section #title .credits.right {
 }
 
 #contents {
-    text-align: center;
+  text-align: center;
 }
 #title {
   text-align: center;
+}
+#about {
+  text-align: center;
+}
+#description {
+  text-align: left;
+}
+#engineering-experience {
+  text-align: center;
+}
+#ibm-build-engineer {
+  text-align: left;
+}
+#music {
+  text-align: center;
+}
+#music-description {
+  text-align: left;
 }
