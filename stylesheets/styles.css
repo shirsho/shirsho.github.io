@@ -849,3 +849,10 @@ section #title .credits.right {
     display: none;
   }
 }
+
+#contents {
+    text-align: center;
+}
+#title {
+  text-align: center;
+}
