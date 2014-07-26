@@ -865,12 +865,26 @@ section #description {
 #engineering-experience {
   text-align: center;
 }
-#ibm-build-engineer {
-  text-align: left;
+section #ibm-build-engineer {
+  width:100%;
+  height:120px;
+  float: left; 
+}
+section #ibm-optimization-developer {
+  width:100%;
+  height:120px;
+  clear: both;
 }
 #music {
   text-align: center;
 }
 #music-description {
   text-align: left;
+}
+section #company-logo {
+  vertical-align:left;
+  float: left;
+}
+section #job-info {
+  vertical-align:middle;
 }
