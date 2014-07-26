@@ -888,3 +888,8 @@ section #company-logo {
 section #job-info {
   vertical-align:middle;
 }
+section #uoft {
+  width:100%;
+  height:120px;
+  clear: both;
+}
