@@ -8,8 +8,8 @@
 		<link rel="stylesheet" href="stylesheets/pygment_trac.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script src="javascripts/respond.js"></script>
-
 		<script src="javascripts/myJavascript.js"></script>
+
 		<!--[if lt IE 9]>
 		  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -21,35 +21,53 @@
 	</head>
 	<body>
     <div class="automargin">
-    <section>
-        <div id="title">
-			<h1>SAMPRIT RAIHAN</h1>
-			<h2>
-				Engineer <span class="bullet"> • </span> 
-				Musician <span class="bullet"> • </span>
-				Fitness Enthusiast <span class="bullet"> • </span>
-				Cook
-				
-			</h2>
-			<hr>
-    	</div>
+    <!--section-->
+    	<div id="title-and-contents">
+	    	<div id="title">
+				<h1 class="myh1">SAMPRIT RAIHAN</h1>
+				<h2 class="myh2">
+					Engineer <span class="bullet"> • </span> 
+					Musician <span class="bullet"> • </span>
+					Fitness Enthusiast <span class="bullet"> • </span>
+					Cook
+				</h2>				
+	    	</div>
 
-	    <div id="contents">
-	    	<h3>
-		    	<a href="#about" onclick="goToAbout(); return false;">About</a><br>
-		    	<a href="#engineering-experience" onclick="goToEngineeringExperience(); return false;">Engineering Experience</a><br>
-		    	<a href="#music" onclick="goToMusic(); return false;">Music</a><br>
-		    	<a href="http://www.linkedin.com/in/sampritraihan" target="_blank">LinkedIn</a><br>
-		    	<a href="https://github.com/shirsho" target="_blank">Github</a><br>
-		    	<a href="https://twitter.com/SampritRaihan" target="_blank">Twitter</a><br>
-		    
-	    	</h3>
-	    </div>
+	    	<br>
+	    	<br>
+		    <div id="contents">
+		    	<h3 class="myh3">
+			    	<a href="#about" onclick="goToAbout(); return false;">About</a><br>
+			    </h3>
 
-		<div id="about">
-			<h3>About</h3>
+			    <h3 class="myh3">
+			    	<a href="#engineering-experience" onclick="goToEngineeringExperience(); return false;">Engineering Experience</a><br>
+			    </h3>
+
+			    <h3 class="myh3">
+			    	<a href="#projects" onclick="goToProjects(); return false;">Projects</a><br>
+			    </h3>
+			    <h3 class="myh3">
+			    	<a href="#music" onclick="goToMusic(); return false;">Music</a><br>
+			    </h3>
+
+			    <h3 class="myh3">
+			    	<a href="http://www.linkedin.com/in/sampritraihan" target="_blank">LinkedIn</a><br>
+			    </h3>
+
+			    <h3 class="myh3">
+			    	<a href="https://github.com/shirsho" target="_blank">Github</a><br>
+			    </h3>
+
+			    <h3 class="myh3">
+			    	<a href="https://twitter.com/SampritRaihan" target="_blank">Twitter</a><br>
+		    	</h3>
+		    </div>
+       	</div>
+       	<div id="about">
+			<h4 class="myh4">About</h4>
 			<div id="description">
-			<p>
+			<p class="mypara">
 				I am going into my final year of Computer Engineering at the <a href="http://www.utoronto.ca/" target="_blank"> University of Toronto </a>, and will graduate in June 2015. <br>
 				I like to build software, make music, hit the gym, and stare at maps. I also like to cook, but that's a basic survival skill, right? <br>
 			</p>	
@@ -57,75 +75,139 @@
 			
 		</div>
 		<div id="engineering-experience">
-			<h3>Engineering Experience</h3>
-			<div id="comixtrip">
-				<div id="company-logo">
-					<!--http://jeffbullas.files.wordpress.com/2010/02/ibm-logo.jpg-->
-					<!--http://www.thomasnet.com/journals/procurement/wp-content/uploads/sites/6/2013/06/IBM-logo.jpg-->
-					<img src="http://s2.cdn.memeburn.com/wp-content/uploads/Cell-C-logo.png" alt="comixtrip" width="200" height="120">
-				</div>
-				<div id="job-info">
-				<h5 class="jobTitle">Comixtrip - Co-Founder</h5>
-				<h6 class="dateRange">May '14 - present</h6>
-				<p class="description">Everything!</p>
-				</div>
-			</div>
+			<h4 class="myh4">Engineering Experience</h4>
 			<div id="ibm-build-engineer">
-				<div id="company-logo">
-					<!--http://jeffbullas.files.wordpress.com/2010/02/ibm-logo.jpg-->
-					<!--http://www.thomasnet.com/journals/procurement/wp-content/uploads/sites/6/2013/06/IBM-logo.jpg-->
+				<div class="company-logo" id="ibm-logo1">
 					<img src="http://jeffbullas.files.wordpress.com/2010/02/ibm-logo.jpg" alt="IBM" width="200" height="120">
 				</div>
-				<div id="job-info">
-				<h5 class="jobTitle">IBM - Compiler Build Engineer Intern</h5>
-				<h6 class="dateRange">Jan - April '14</h6>
-				<p class="description">Build Infrastructure</p>
+				<div class="job-info" id="build-engineer-info">
+					<h5 class="job-title">IBM - Compiler Build Engineer Intern</h5>
+					<h6 class="date-range">Jan - April '14</h6>
+					<p class="description">
+					<br><br>
+					• Enhanced and automated the build/verification infrastructure for shipping more stable future releases of C/C++, FORTRAN and COBOL compilers for several platforms <br>
+					• Monitored development and production builds for several compiler components across multiple platforms <br>
+					• Wrote Perl scripts to automate repetitive manual work during the build monitoring workflow
+					</p>
 				</div>
 			</div>
+			<br>
 			<div id="ibm-optimization-developer">
-				<div id="company-logo">
+				<div class="company-logo" id="ibm-logo2">
 					<!--http://jeffbullas.files.wordpress.com/2010/02/ibm-logo.jpg-->
 					<!--http://www.thomasnet.com/journals/procurement/wp-content/uploads/sites/6/2013/06/IBM-logo.jpg-->
 					<img src="http://jeffbullas.files.wordpress.com/2010/02/ibm-logo.jpg" alt="IBM" width="200" height="120">
 				</div>
-				<div id="job-info">
-				<h5 class="jobTitle">IBM - Compiler Build Engineer Intern</h5>
-				<h6 class="dateRange">Jan - April '14</h6>
-				<p class="description">Build Infrastructure</p>
+				<div class="job-info" id="optimization-developer-info">
+					<h5 class="job-title">IBM - Compiler Optimization Developer Intern</h5>
+					<h6 class="date-range">May - Dec '13</h6>
+					<p class="description">
+					<br><br>
+• Worked as a backend developer for the shared compiler backend Testarossa, with a focus on optimization and code generation for rational XL C/C++ compiler on z/Linux <br>
+• Refactored C/C++ code in order to provide cleaner programming interfaces between code generation and 
+intermediate language generation <br>
+• Implemented a C++ tool that generates message catalog files for the compiler backend <br>
+• Implemented stack backtrace generation for C/C++ on z/Linux <br>
+• Implemented Makefile changes to reduce static compiler local build time on z/Linux development machine by about 50% <br>
+• Enhanced the existing build/test infrastructure using Perl scripts to support specialized tests for COBOL, PL/X and C++ on the z/OS platform <br>
+					</p>
 				</div>
 			</div>
-			<div id="uoft">
-				<div id="company-logo">
-					<!--http://jeffbullas.files.wordpress.com/2010/02/ibm-logo.jpg-->
-					<!--http://www.thomasnet.com/journals/procurement/wp-content/uploads/sites/6/2013/06/IBM-logo.jpg-->
-					<img src="http://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/200px-Utoronto_coa.svg.png" alt="uoft" width="200" height="120">
-				</div>
-				<div id="job-info">
-				<h5 class="jobTitle">OS161 - Developer</h5>
-				<h6 class="dateRange">Jan - April '13</h6>
-				<p class="description">Built OS kernel</p>
-				</div>
-			</div>
+			<br>
 		</div>
-
-		<div id="music">
-			<h3>Music</h3>
-			<div id="music-description">
-			<p>			
-				Music is undoubtedly my biggest passion, and one of the very few things that I enjoy without the expectation of a reward.
-			</p>
-			<p>
-				I am a multi-instrumentalist/songwriter/producer and I handle the entire instrumental section of my latest musical endeavor, <a href="https://www.facebook.com/transcendworld" target="_blank"> Transcend</a>, a post rock duo that features my old bandmate Sifat Hasan.
-			</p>
-			<div id="bandcamp">
-				<iframe style="border: 0; width: 100%; height: 470px;" src="http://bandcamp.com/EmbeddedPlayer/track=496742491/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://transcendworld.bandcamp.com/track/worth-your-while">Worth Your While by Transcend</a></iframe>
-	
+		<div id="projects">
+			<h4 class="myh4">Projects</h4>
+			
+			<div id="facebook-app">
+				<div class="company-logo" id="facebook-logo">
+					<img src="http://lauragrb.com/wp-content/plugins/easy-contact/facebook-logo-png-white-5117.png" alt="comixtrip" width="200" height="120">
+				</div>
+				
+				<div class="job-info" id="facebook-app-info"> 
+				<h5 class="job-title">Real Estate Marketing Facebook Application</h5>
+				<h6 class="date-range">Aug '14 - present</h6>
+				<p class="description">
+				<br> <br>
+• Leveraging question2answer framework and Facebook API to create a question/answer web application <br>
+				</p>
+				</div>
+			</div>
+			<br><br>
+			<div id="comixtrip">
+				<div class="company-logo" id="comixtrip-logo">
+					<img src="http://www.iwallpapersfive.com/wp-content/uploads/2013/12/android_logo_wallpaper_black_d_android_wallpaper_black_happybluefrog_poow__3d_android_phone.jpg" alt="comixtrip" width="200" height="120">
+				</div>
+				
+				<div class="job-info" id="comixtrip-info"> 
+				<h5 class="job-title">Comixtrip</h5>
+				<h6 class="date-range">May '14 - present</h6>
+				<p class="description">
+				<br> <br>
+• Android photo sharing platform that allows users to capture photos and create comic strips out of them <br>
+• Implemented backend web services in Javascript/node.js, MySQL, Redis, functional with session handling, authentication, email verification, and photo album storage <br>
+• Currently enhancing the application to support a photo feed and notification system
+				</p>
+				</div>
 			</div>
 			
-			<p>
+			<div id="uoft-kernel">
+					<div class="company-logo" id="uoft-logo">
+						<!--http://jeffbullas.files.wordpress.com/2010/02/ibm-logo.jpg-->
+						<!--http://www.thomasnet.com/journals/procurement/wp-content/uploads/sites/6/2013/06/IBM-logo.jpg-->
+						<img src="http://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/200px-Utoronto_coa.svg.png" alt="uoft" width="200" height="120">
+					</div>
+					<div class="job-info" id="kernel-developer-info">
+						<h5 class="job-title">Operating Systems Project</h5>
+						<h6 class="date-range">Jan - April '13</h6>
+						<p class="description">
+						<br><br>
+• Worked with a partner to develop synchronization primitives, process management system and system calls for OS161, an open source barebones operating system <br>
+• Code available at: https://github.com/shirsho/os161
+						</p>
+					</div>
+			</div>
+			<br>
+			<div id="uoft-server">
+					<div class="company-logo" id="uoft-logo">
+						<!--http://jeffbullas.files.wordpress.com/2010/02/ibm-logo.jpg-->
+						<!--http://www.thomasnet.com/journals/procurement/wp-content/uploads/sites/6/2013/06/IBM-logo.jpg-->
+						<img src="http://upload.wikimedia.org/wikipedia/en/thumb/0/04/Utoronto_coa.svg/200px-Utoronto_coa.svg.png" alt="uoft" width="200" height="120">
+					</div>
+					
+					<div class="job-info" id="server-info">
+						<h5 class="job-title">Database Storage Server</h5>
+						<h6 class="date-range">Jan - April '12</h6>
+						<p class="description">
+						<br> <br>
+• Worked in a team of four to develop a fully functional database storage server with multiple client support in C
+• Extensively involved during the coding/debugging/testing cycles of the project<br>
+• Mostly involved with coding the server side of the project, with a focus on data storage and retrieval aspects, but was also involved with setting up communication protocols and parsing client side data input<br>
+• Engaged in team meetings to discuss project scopes, alternatives and took design decisions<br>
+• Developed several documents during four key project milestones to represent the design in progress along with key functionalities
+						</p>
+					</div>
+			</div>
+		
+		</div>
+		<br>
+		
+		<div id="music">
+			<h4 class="myh4">Music</h4>
+			<div id="music-description">
+			<p class="mypara">			
+				Music is undoubtedly my biggest passion, and one of the very few things that I enjoy without the expectation of a reward.
+			</p>
+			<p class="mypara">
+				I am a multi-instrumentalist/songwriter/producer and I handle the entire instrumental section of my latest musical endeavor, <a href="https://www.facebook.com/transcendworld" target="_blank"> Transcend</a>, a post rock duo that features my old bandmate Sifat Hasan.
+			</p class="mypara">
+			<div id="bandcamp">
+				<iframe style="border: 0; width: 100%; height: 470px;" src="http://bandcamp.com/EmbeddedPlayer/track=496742491/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://transcendworld.bandcamp.com/track/worth-your-while">Worth Your While by Transcend</a></iframe>	
+			</div>
+			
+			<p class="mypara">
 				Back in my high school days, I was also deeply involved with <a href="https://www.facebook.com/absentelementband" target="_blank">Absent Element</a>, an experimental rock band from Dhaka, Bangladesh, where I participated in the capacity of a guitar player, songwriter, composer and lyricist.
 			</p>
-			<p>
+			<p class="mypara">
 				We released two singles Pichutaan and Oprotiroddho in the compilation albums Aashor and Rock 505, released under Gaanchil and G-Series, two of the largest record labels in the country.
 			</p>
 
@@ -134,8 +216,8 @@
 			<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/13622667&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 			</div>
 		</div>
-	</section>
-	</div-->
+	<!--/section-->
+	</div>
     
 	</body>
 </html>
