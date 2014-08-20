@@ -40,7 +40,8 @@ var animation = function onloadAnimation()
 }
 */
 window.onload = function() {    
-    $("#title-and-contents").animate({'marginTop' : "-=10px"}).show("fade", {},  {duration:1200}).dequeue();
+    //$("#title-and-contents").animate({'marginTop' : "-=10px"}).show("fade", {},  {duration:1200}).dequeue();
+    $("#title").animate({'marginTop' : "-=20px"}); 
 };
 
 function highlightDiv(div){
