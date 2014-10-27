@@ -45,7 +45,7 @@ window.onload = function() {
 };
 
 function highlightDiv(div){
-    $("div").hover(function(){
+    $(div).hover(function(){
         $(this).css("background": "blue");
     });
 }
